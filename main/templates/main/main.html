@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
 </head>
 <body>
-    
+    <main>
+        {% for article in articles %}
+            <h2>{{ article.title }}</h2>
+            {{ article.publication_datetime }}
+            <p>{{ article.content }}</p>
+        {% endfor %}
+    </main>
 </body>
 </html>
