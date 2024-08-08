@@ -1,0 +1,38 @@
+.main a {
+    margin-left: 90%;
+}
+
+.add_article a {
+    text-decoration: none;
+    color: black;
+    margin-left: 300px;
+}
+
+.article_adding_form {
+    margin-left: 40%;
+    margin-top: 10%;
+    width: 300px;
+}
+
+.article_adding_form form {
+    text-align: center;
+}
+
+.content {
+    min-width: 200px;
+    min-height: 120px;
+    text-align: center;
+}
+
+.publication_datetime {
+    text-align: center;
+}
+
+.title {
+    width: 250px;
+    text-align: center;
+}
+
+.article_adding_form form button {
+    margin-top: 30px;
+}
