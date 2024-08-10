@@ -2,6 +2,11 @@
     margin-left: 90%;
 }
 
+.contentbox a {
+    text-decoration: none;
+    color: black;
+}
+
 .add_article a {
     text-decoration: none;
     color: black;
