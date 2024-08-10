@@ -26,5 +26,6 @@ class ArticleDetailedView(DetailView):
 
 class ArticleUpdateView(UpdateView):
     model = Article
-    form_class = add_article
+    form_class = ArticleForm
     template_name = 'main/edit_article.html'
+

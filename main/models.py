@@ -13,3 +13,6 @@ class Article(models.Model):
     class Meta:
         verbose_name = "Статья"
         verbose_name_plural = "Статьи"
+
+    def get_absolute_url(self):
+        return f'/article-{self.id}'

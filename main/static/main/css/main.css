@@ -23,6 +23,16 @@
     text-align: center;
 }
 
+.article_editting_form {
+    margin-left: 40%;
+    margin-top: 10%;
+    width: 300px;
+}
+
+.article_editting_form form {
+    text-align: center;
+}
+
 .content {
     min-width: 200px;
     min-height: 120px;
