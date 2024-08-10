@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from .models import Article
 from .forms import ArticleForm
 from django.views.generic import DetailView, UpdateView, DeleteView
+from django.urls import reverse_lazy
 
 def main(request):
     articles = Article.objects.order_by('-publication_datetime')
@@ -29,3 +30,7 @@ class ArticleUpdateView(UpdateView):
     form_class = ArticleForm
     template_name = 'main/edit_article.html'
 
+class ArticleDeleteView(DeleteView):
+    model = Article
+    template_name = 'main/delete_article.html'
+    success_url = reverse_lazy('main_page')
