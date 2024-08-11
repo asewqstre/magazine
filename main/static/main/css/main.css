@@ -116,6 +116,41 @@
     right: 0;
 }
 
+/* delete_article styles */
+
+.delete-confirmation {
+    margin-left: 40%;
+    margin-top: 20%;
+}
+
+.delete-confirmation strong {
+    font-size: xx-large;
+    margin: 20px;
+}
+
+.delete-confirmation-buttons {
+    margin-top: 20px;
+}
+
+.delete-confirmation-buttons a {
+    width: 120px;
+    height: 30px;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    margin: 5px;
+    color: white;
+}
+
+.delete-confirmation-buttons button {
+    width: 120px;
+    height: 30px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
 
 
 .article_editting_form {
