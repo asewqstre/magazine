@@ -10,15 +10,19 @@
     <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
 </head>
 <body>
-    <header class="main">
-        <a href="/add_article"><button class="btn btn-info">Добавить статью</button></a>
+    <header class="main_header">
+        <a href="/add_article"><button class="btn btn-info add_article_button">Добавить статью</button></a>
     </header>
     <main>
         <div class="contentbox">
             {% for article in articles %}
-                <a href="{% url 'Article-detailed' article.id %}"><h2>{{ article.title }}</h2></a>
-                <span>Дата и время опубликования: {{ article.publication_datetime }}</span>
-                <p>{{ article.content }}</p>
+            <a href="{% url 'Article-detailed' article.id %}">
+                <div class="article">
+                    <h2>{{ article.title }}</h2>
+                    <span>Дата и время опубликования: {{ article.publication_datetime }}</span>
+                    <p>{{ article.content }}</p>
+                </div>
+            </a>
             {% endfor %}
         </div>
     </main>
