@@ -9,11 +9,20 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
     <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
 </head>
-<body>
-    <h1>{{ article.title }}</h1>
-    <span>{{ article.publication_datetime }}</span>
-    <p>{{ article.content }}</p>
-    <a href="article-{{ article.id }}/update" class="btn btn-info">Редактировать</a>
-    <a href="article-{{ article.id }}/delete" class="btn btn-warning">Удалить</a>
+<body class="detailed_view_body">
+    <header>
+        <a href="/" class="btn btn-info">Назад</a>
+        <h1>{{ article.title }}</h1>
+        <span>Дата и время опубликования: {{ article.publication_datetime }}</span>
+    </header>
+    <main>
+        <p>{{ article.content }}</p>
+    </main>
+    <footer>
+        <div class="detailed_view_buttons">
+            <a href="article-{{ article.id }}/update" class="btn btn-info">Редактировать</a>
+            <a href="article-{{ article.id }}/delete" class="btn btn-warning">Удалить</a>
+        </div>
+    </footer>
 </body>
 </html>
